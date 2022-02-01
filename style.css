@@ -52,7 +52,46 @@
   align-items: center;
   justify-content: center;
 }
+.navigation ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigation ul li{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  cursor: pointer;
+  
+}
+.navigation ul li > a,
+.navigation ul li > i{
+  display: flex;
+  margin: 0 10px;
+  text-align: justify;
+  /* font-size: 1.2rem; */
+}
+.navigation ul li > a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+}
+.navigation ul li:hover{
+  background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00);
+  transition: all 5.6s ease;
+}
 
+
+.fas, .far{
+  color: white;
+  font-size: 2rem;
+}
 .bottom{
   display: flex;
   flex-basis: 20%;
