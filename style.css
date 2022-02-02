@@ -19,6 +19,7 @@
   flex-basis: 20%;
   background: black;
   height: 100%;
+  /* position: fixed; */
 }
 .logo{
   display: flex;
@@ -42,8 +43,7 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   cursor: pointer;
-  box-shadow: 1px 1px 14px 6px white;
-
+  box-shadow: 1px 1px 3px 3px white;
 }
 .navigation{
   display: flex;
@@ -82,9 +82,9 @@
   font-size: 1.3rem;
   color: white;
 }
-.navigation ul li:hover{
+.current{
   background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00);
-  box-shadow: 1px 1px 14px 6px white;
+  box-shadow: 1px 1px 6px 3px white;
 }
 .fas, .far, .fab{
   color: white;
@@ -201,5 +201,17 @@
   transition: all 0.8s ease;
 }
 .download a:hover{
-  box-shadow: 1px 1px 14px 6px white;
+  box-shadow: 1px 1px 6px 3px white;
 }
+
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+
