@@ -83,7 +83,7 @@
 .navigation ul li:hover{
   background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00);
 }
-.fas, .far{
+.fas, .far, .fab{
   color: white;
   font-size: 2rem;
 }
@@ -135,4 +135,65 @@
   justify-content: center;
   align-items: center;
   flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons{
+  background-image: linear-gradient(to right, #1d3ffd, #45adfc, #fdfdfd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
+}
+.name, .wordings, .icons, .download{
+  flex-basis: 5%;
+  height: 10%;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 8px 0;
+  color: white;
+}
+.name h2{
+  font-size: 2.5rem;
+  box-sizing:unset;
+}
+.wordings span{
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.icons{
+  display: flex;
+  justify-content: center;   
+  width: 20%;
+}
+.icons a{
+  display: flex;
+  flex-basis: 20%;
+}
+.download{
+  width: 16%;
+  height: 40%;
+}
+.download button{
+  width: 100%;
+  background: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.8s ease;
+}
+.download button:hover{
+  box-shadow: 1px 1px 5px 5px white;
 }
