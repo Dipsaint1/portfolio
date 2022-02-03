@@ -59,11 +59,87 @@
 }
 .more-about-me{
   color: white;
-  display: none;
-  width: 100%;
-  background-color: blue;
+  display: flex;
+  width: 95%;
+  /* background-color: blue; */
+  /* height: 100vh; */
+  margin: auto;
 }
-.personal-info h2{
+.more-container{
+  margin-top: 15px;
+  display: flex; 
+  flex-wrap: wrap;
+  flex-basis: 95%;
+  height: 100%;
+}
+.more-about-me-container{
+  min-width: 47%;
+  justify-content: space-around;
+  display: flex;
+  flex-basis: 25%;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+  margin: 35px 5px;
+}
+.personal-info, .achievements, .experience, .education{
+  flex-basis: 10%;
+  height: 100%;
+  width: 50%;
+  border-bottom: 3px gray dashed; 
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.personal-info h2, .achievements h2, .experience h2, .education h2{
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.profile-details{
+  flex-basis: 80%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info{
+  display: flex;
+  flex-basis: 10%;
+  align-items: center;
+  min-width: 50%;
+  width: 100%;
+  font-size: 1rem;
+  height: 100%;
+  margin: 15px 0;
+}
+.info>span{
+  margin-left: 3px;
+  font-weight: bold;
+}
+.close-container{
+  display: flex;
+  flex-basis: 5%;
+  width: 100%;
+  height: 10%;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.close-container .close{
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer
+}
+/* .personal-info h2{
   color: white;
   font-size: 2rem;
-}
+} */
