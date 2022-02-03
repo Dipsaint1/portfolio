@@ -71,6 +71,7 @@
   flex-wrap: wrap;
   flex-basis: 95%;
   height: 100%;
+  justify-content: space-between;
 }
 .more-about-me-container{
   min-width: 47%;
@@ -109,13 +110,15 @@
   align-items: center;
   min-width: 50%;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.1rem;
   height: 100%;
   margin: 15px 0;
+  color: rgb(170, 165, 165);
 }
 .info>span{
   margin-left: 3px;
   font-weight: bold;
+  color: white;
 }
 .close-container{
   display: flex;
@@ -127,17 +130,18 @@
   align-items: center;
 }
 .close-container .close{
-  background: red;
+  /* background: transparent; */
   display: flex;
   align-items: center;
   justify-content: center;
+  border: white 3px solid;
   border-radius: 100%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  cursor: pointer
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
 }
 /* .personal-info h2{
   color: white;
