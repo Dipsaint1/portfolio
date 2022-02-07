@@ -186,14 +186,16 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: red;
+  flex-direction: column;
+  
 }
 .experience-block{
   display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
-  max-width: 47%;
   margin: 20px 0;
+  align-items: flex-start;
 }
 .experience-container-left{
   display: flex;
@@ -202,41 +204,76 @@
   flex-basis: 10%;
   width: 100%;
   height: 100%;
-  background: black;
+  align-items: flex-start;
+  margin-right: 20px;
+  position: relative;
 }
 .experience-icon{
   display: flex;
-  flex-basis: 40%;
-  max-width: 100%;
-  /* max-height: 100%; */
-  height: 80px;
-  width: 80px;
-
-  /* height: 100%; */
-  border-radius: 100%;
-  background-color: green;
+  justify-content: center;
+  flex-basis: 10%;
+  height: 100%;
+  width: 100%;
   color: white;
   justify-content: center;
   align-items: center;
 }
+.experience-icon .fa{
+  border-radius: 100%;
+  font-size: 1.5rem;
+  background-color: rgb(91, 131, 170);
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
 .experience-line{
-  flex-basis: 80%;
-  display: block;
-  content: "";
-  width: 3px;
-  height: 100%;
-  background-color: red;
-  color: yellow;
+  flex-basis: 90%;
+  border-left: 2px solid rgb(145, 145, 138);
+  position: absolute;
+  left: 50%;
+  transform: translate(0, 100%);
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  max-height: 150px;
 }
 .experience-container-right{
   display: flex;
   flex-direction: column;
   flex-basis: 90%;
   width: 100%;
-  background-color: yellow;
   height: 100%;
 }
-
+.date{
+  background-color: rgb(91, 131, 170);
+  width: 30%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+.role{
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 13px 0;
+}
+.role > span{
+  font-size: 1rem;
+  color: rgb(140, 126, 126);
+  margin-left: 5px;
+}
+.role-description{
+  font-size: 0.96rem;
+  letter-spacing: 1px;
+  color: rgb(221, 220, 220);
+  text-align: justify;
+}
 .close-container{
   display: flex;
   flex-basis: 5%;
@@ -247,7 +284,6 @@
   align-items: center;
 }
 .close-container .close{
-  /* background: transparent; */
   display: flex;
   align-items: center;
   justify-content: center;
