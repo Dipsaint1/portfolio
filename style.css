@@ -63,13 +63,24 @@
   width: 95%;
   margin: auto;
 }
+
 .more-container{
+  max-height: 70vh;
   margin-top: 15px;
   display: flex; 
   flex-wrap: wrap;
   flex-basis: 95%;
   height: 100%;
   justify-content: space-between;
+  overflow-y: scroll;
+  overflow-x: hidden;  /* Disable horizontal scroll */
+  scrollbar-width: none;    /* Disable scrollbar display for Firefox */
+  -ms-overflow-style: none;   /* Disable scrollbar display for Internet Explorer */
+  scroll-behavior: smooth;
+}
+.more-container::-webkit-scrollbar{  /* Mozilla */
+  width: 0;
+  height: 0;
 }
 .more-about-me-container{
   min-width: 47%;
