@@ -1,11 +1,11 @@
 *{padding: 0; margin: 0; scroll-behavior: smooth; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
 .home{display: flex; width: 100%;justify-content: center; align-items: center; height: 100vh;}
 .left{display: flex; flex-direction: column; align-items: center; background: black; height: 100%; width: 20%; position: fixed; left: 0;}
-.logo{display: flex; flex-basis: 10%; justify-content: center; align-items: center; width: 100%;}
-.logo-design{font-size: 3rem; display: flex; justify-content: center; text-decoration: none; width: 100%; color: white; background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;box-shadow: 1px 1px 3px 3px white;}
+.logo{display: flex; flex-basis: 10%; justify-content: flex-start; align-items: center; width: 100%;}
+.logo-design{font-size: 3rem; display: flex; justify-content: flex-start; text-decoration: none; width: 100%; color: white; background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;box-shadow: 1px 1px 3px 3px white;}
 .navigation{display: flex; flex-basis: 70%; flex-direction: column; width: 100%; align-items: center; justify-content: center;}
-.navigation ul{width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
-.navigation ul li{justify-content: center; align-items: center; display: flex; width: 100%; margin: 10px 0; padding: 10px 0; cursor: pointer; transition: all 0.8s ease;}
+.navigation ul{width: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+.navigation ul li{justify-content: flex-start; align-items: center; display: flex; width: 100%; margin: 10px 0; padding: 10px 0; cursor: pointer; transition: all 0.8s ease;}
 .navigation ul li > a, .navigation ul li > i{display: flex; margin: 0 10px; font-weight: bold;}
 .navigation ul li > a{text-decoration: none; font-size: 1.3rem; color: white;}
 .current{background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00); box-shadow: 1px 1px 6px 3px white;}
@@ -16,14 +16,54 @@
 .bottom-intro{flex-basis: 60%; display: flex; flex-direction: column; align-items: center; padding: 0 5px;}
 .bottom-intro h3{color: white; font-size: 2rem; margin-bottom: 10px;}
 .bottom-intro a{text-decoration: none; color: white; font-size: 1rem;}
-.right{background-image: url(images/pexels-andrew-neel-3178744.jpg); height: 100%; background-position: center; background-size: cover; background-repeat: no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; flex-basis: 80%; display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; right: 0; width: 80%;}
-.icons{background-image: linear-gradient(to right, #1d3ffd, #45adfc, #fdfdfd); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;}
-.name, .wordings, .icons, .download{flex-basis: 5%; height: 10%; display: flex; width: 50%; justify-content: center; align-items: center; text-align: center; margin: 8px 0; color: white;}
-.name h2{font-size: 2.8rem; box-sizing:unset;}
-.wordings span{font-size: 1.5rem; letter-spacing: 1px; font-weight: bold;}
+.right{
+  /* background-image: linear-gradient(to right, black, gray); */
+  background-image: url(images/workspace.jpg); 
+  height: 100%; background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: 100%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  flex-basis: 80%; 
+  display: flex; 
+  position: absolute; 
+  right: 0; 
+  width: 80%;
+}
+.icons{
+  background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent; 
+  cursor: pointer;
+}
+.name, .wordings, .icons{
+  flex-basis: 5%; 
+  height: 10%; 
+  display: flex; 
+  width: 50%; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  margin: 8px 0; 
+  color: white;
+  background-image: linear-gradient(to top, #fd1d1d, #fcb045, #ff6a00, black 30%); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent; 
+}
+.name h2{font-size: 3.5rem; color: rgb(0, 0, 0); margin-top: 30px;}
+.wordings span{font-size: 1.5rem; letter-spacing: 1px; font-weight: bold; color: black}
 .icons{display: flex; justify-content: center; width: 20%;}
 .icons a{display: flex; flex-basis: 20%;}
-.download{width: 16%; height: 40%; display: flex; justify-content: center;}
+.download{width: 16%; height:2 40%; display: flex; justify-content: center;}
 .download a{width: 100%; text-decoration: none; background: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00);  color: white; padding: 10px; cursor: pointer; border: none; border-radius: 2px; font-size: 1.5rem; font-weight: bold; transition: all 0.8s ease;}
 .download a:hover{box-shadow: 1px 1px 6px 3px white;}
 
@@ -54,17 +94,17 @@
 .more{display: flex; flex-basis: 10%; width: 100%; height: 100%; justify-content: flex-start; align-items: flex-start; margin-top: 20px;}
 .more-btn{font-size: 1.2rem; cursor: pointer; display: flex; align-items: flex-start; color: white; padding: 12px; font-weight: bold; border: none; background: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00);}
 .more-btn:hover{box-shadow: 1px 1px 6px 3px white;}
-.show{
-  display: flex;
-}
+.show{display: flex;}
 .more-about-me{
   color: white;
   display: none;
   width: 95%;
   margin: auto;
+  
 }
-
 .more-container{
+  background-color: rgb(20, 16, 34);
+  border-radius: 20px;
   max-height: 70vh;
   margin-top: 15px;
   display: flex; 
@@ -95,16 +135,17 @@
 .personal-info, .achievements, .experience, .education{
   flex-basis: 10%;
   height: 100%;
-  width: 50%;
-  border-bottom: 3px gray dashed; 
+  width: 100%;
   align-items: flex-start;
   margin-bottom: 10px;
 }
 
 .personal-info h2, .achievements h2, .experience h2, .education h2{
   font-size: 2rem;
-  width: 100%;
+  width: fit-content;
   margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px gray dashed;
 }
 .profile-details{
   flex-basis: 80%;
@@ -191,16 +232,15 @@
 .achievement-block div>span{
   font-size: 3.5rem;
 }
-.experience-container{
+.experience-container, .education-container{
   flex-basis: 90%;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  
 }
-.experience-block{
+.experience-block, .education-block{
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -208,7 +248,7 @@
   margin: 20px 0;
   align-items: flex-start;
 }
-.experience-container-left{
+.experience-container-left, .education-container-left{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -219,7 +259,7 @@
   margin-right: 20px;
   position: relative;
 }
-.experience-icon{
+.experience-icon, .education-icon{
   display: flex;
   justify-content: center;
   flex-basis: 10%;
@@ -229,7 +269,7 @@
   justify-content: center;
   align-items: center;
 }
-.experience-icon .fa{
+.experience-icon .fa, .education-icon .fa{
   border-radius: 100%;
   font-size: 1.5rem;
   background-color: rgb(91, 131, 170);
@@ -239,7 +279,7 @@
   justify-content: center;
   align-items: center;
 }
-.experience-line{
+.experience-line, .education-line{
   flex-basis: 90%;
   border-left: 2px solid rgb(145, 145, 138);
   position: absolute;
@@ -251,7 +291,7 @@
   min-height: 100px;
   max-height: 150px;
 }
-.experience-container-right{
+.experience-container-right, .education-container-right{
   display: flex;
   flex-direction: column;
   flex-basis: 90%;
@@ -293,6 +333,7 @@
   border-radius: 100%;
   justify-content: center;
   align-items: center;
+  margin-left: 5px;
 }
 .close-container .close{
   display: flex;
