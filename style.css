@@ -1,6 +1,21 @@
 *{padding: 0; margin: 0; scroll-behavior: smooth; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
-.home{display: flex; width: 100%;justify-content: center; align-items: center; height: 100vh;}
-.left{display: flex; flex-direction: column; align-items: center; background: black; height: 100%; width: 20%; position: fixed; left: 0;}
+.home{
+  display: flex; 
+  width: 100%;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+}
+.left{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  background: black; 
+  height: 100%; 
+  width: 20%; 
+  position: fixed; 
+  left: 0;
+}
 .logo{display: flex; flex-basis: 10%; justify-content: flex-start; align-items: center; width: 100%;}
 .logo-design{font-size: 3rem; display: flex; justify-content: flex-start; text-decoration: none; width: 100%; color: white; background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;box-shadow: 1px 1px 3px 3px white;}
 .navigation{display: flex; flex-basis: 70%; flex-direction: column; width: 100%; align-items: center; justify-content: center;}
@@ -19,7 +34,7 @@
 .right{
   /* background-image: linear-gradient(to right, black, gray); */
   background-image: url(images/workspace.jpg); 
-  height: 100%; background-position: center; 
+  background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
   height: 100%;
@@ -27,11 +42,11 @@
   flex-direction: column; 
   justify-content: flex-start; 
   align-items: center; 
-  flex-basis: 80%; 
   display: flex; 
-  position: absolute; 
+  position: relative; 
   right: 0; 
   width: 80%;
+  margin-left: 20%;
 }
 .icons{
   background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00); 
@@ -63,13 +78,29 @@
 .wordings span{font-size: 1.5rem; letter-spacing: 1px; font-weight: bold; color: black}
 .icons{display: flex; justify-content: center; width: 20%;}
 .icons a{display: flex; flex-basis: 20%;}
-.download{width: 16%; height:2 40%; display: flex; justify-content: center;}
+.download{width: 16%; display: flex; justify-content: center;}
 .download a{width: 100%; text-decoration: none; background: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00);  color: white; padding: 10px; cursor: pointer; border: none; border-radius: 2px; font-size: 1.5rem; font-weight: bold; transition: all 0.8s ease;}
 .download a:hover{box-shadow: 1px 1px 6px 3px white;}
 
 /* ABOUT */
-.about{background-color: rgb(5, 3, 12); position: absolute; right: 0; width: 80%; display: flex; flex-direction: column; justify-content: center; min-height: 100vh; padding: 50px 10px;}
-.about-container{display: flex; align-items: center; flex-direction: row; width: 100%; height: 100%;}
+.about{
+  background-color: rgb(5, 3, 12); 
+  position: relative; 
+  width: 80%; 
+  margin-left: 20%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  min-height: 100vh; 
+  padding: 30px 10px;
+}
+.about-container{
+  display: flex; 
+  align-items: center; 
+  flex-direction: row; 
+  width: 100%; 
+  height: 100%;
+}
 .about-image{display: flex; flex-basis: 40%; width: 100%; justify-content: center; align-items: center; height: 100%;}
 .about-image img{width: 70%; border-radius: 10px;}
 .about-skill{display: flex; flex-basis: 60%; width: 100%; height: 100%; flex-direction: column; justify-content: center; align-items: center; color: #fff;}
@@ -100,7 +131,6 @@
   display: none;
   width: 95%;
   margin: auto;
-  
 }
 .more-container{
   background-color: rgb(20, 16, 34);
@@ -348,9 +378,115 @@
   cursor: pointer;
   color: white;
 }
-.on{
-  display: flex;
+.on{display: flex;}
+.off{display: none;}
+
+/* services */
+.services{
+  background-color: rgb(14, 6, 44); 
+  min-height: 100vh; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  display: flex; 
+  position: relative; 
+  width: 80%;
+  margin-left: 20%;
+  color: white;
 }
-.off{
-  display: none;
+.services-container{
+  width: 100%;
+  height: 100%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.services-header{
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.services-intro{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: justify;
+  width: 50%;
+  height: 100%;
+  line-height: 30px;
+}
+.services-intro p{
+  font-size: 1.2rem;
+  color: gray;
+  height: 100%;
+}
+.services-information{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.services-information-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 23%;
+  min-height: 250px;
+  align-items: center;
+  background-color: rgb(34, 29, 72);
+  color: white;
+  margin: 10px 5px;
+  border-radius: 10px;
+  transition: all 0.7s ease;
+}
+
+.services-information-container-icon{
+  display: flex;
+  flex-basis: 33%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 2.8rem;
+  color: white;
+}
+.services-information-container-info{
+  font-size: 1.8rem;
+  flex-basis: 33%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 90%;
+  font-weight: 600;
+  height: 100%;
+  text-align: center;
+}
+.services-information-container-more{
+  flex-basis: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  font-size: 1.3rem;
+  height: 100%;
+}
+.services-information-container-more-info, .services-information-container-more-icon{
+  padding: 5px;
+  cursor: pointer;
+  justify-content: center;
+}
+.services-information-container-more-icon i:hover{
+  font-size: 2.5rem;
+  width: 100%;
+  width: fit-content;
+}
+.services-information-container:hover{
+  transform: skew(5deg, 8deg);
+  box-shadow: 2px 1px 2px 5px white;
+  color: rgb(119, 112, 112);
 }
