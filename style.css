@@ -533,15 +533,122 @@
 
 .contact-information-container{
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   width: 100%;
   max-width: 30%;
-  min-height: 200px;
+  min-height: 150px;
   align-items: flex-start;
   background-color: rgb(34, 29, 72);
   color: white;
   margin: 5px;
   border-radius: 10px;
   transition: all 0.7s ease;
+}
+.contact-information-container:hover{
+  background-color: rgb(102, 97, 143);
+}
+.contact-information-container-icon{
+  display: flex;
+  flex-basis: 20%;
+}
+.contact-information-container-icon{
+  display: flex;
+  flex-basis: 20%;
+  width: 100%;
+  height: 100%;
+  margin: 7% 0 0 5%;
+}
+.contact-information-container-icon i{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(91, 131, 170);
+  color: white;
+  font-size: 2rem;
+} 
+.contact-information-container-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 80%;
+  width: 100%;
+  margin-top: 7%;
+  margin-left: 5%;
+  color: rgb(211, 197, 197);
+}
+
+.contact-information-container-info h3{
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.contact-information-container-info span{
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.form-container{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  width: 100%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34, 29, 72);
+  border-radius: 3px;
+}
+form div{
+  margin: 15px 0;
+  min-height: 60px;
+  width: 700px;
+  padding: 0 20px;
+}
+.form-header{
+  font-size: 1.7rem;
+  font-weight: bold;
+  width: 80%;
+  color: white;
+}
+.form-header>span{
+  color: gray;
+}
+form div input, form div textarea{
+  outline: none;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 1.2rem;
+  border-bottom:rgb(99, 95, 95) 2px solid;
+  font-size: 15px;
+  background: transparent;
+  color: white;
+  overflow-y: hidden;
+}
+form > button{
+  margin: 15px 20px;
+  width: 20%;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  background-color: rgb(91, 131, 170);
+  transition: all 0.5s ease-in-out;
+}
+form > button:hover{
+  background-color: rgb(226, 236, 247);
+  color: black;
+}
+::placeholder{
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 100%;
 }
