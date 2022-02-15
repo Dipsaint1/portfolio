@@ -382,7 +382,7 @@
 .off{display: none;}
 
 /* services */
-.services{
+.services, .portfolio{
   background-color: rgb(14, 6, 44); 
   min-height: 100vh; 
   justify-content: flex-start; 
@@ -393,7 +393,7 @@
   margin-left: 20%;
   color: white;
 }
-.services-container{
+.services-container, .portfolio-container{
   width: 100%;
   height: 100%;
   padding: 40px 30px;
@@ -401,14 +401,14 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-.services-header{
+.services-header, .portfolio-header{
   font-size: 3rem;
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 30px;
 }
-.services-intro{
+.services-intro, .portfolio-intro{
   margin-bottom: 30px;
   display: flex;
   justify-content: flex-start;
@@ -417,7 +417,7 @@
   height: 100%;
   line-height: 30px;
 }
-.services-intro p{
+.services-intro p, .portfolio-intro p{
   font-size: 1.2rem;
   color: gray;
   height: 100%;
@@ -486,7 +486,46 @@
   width: fit-content;
 }
 .services-information-container:hover{
-  transform: skew(5deg, 8deg);
+  transform: skew(3deg, 5deg);
   box-shadow: 2px 1px 2px 5px white;
   color: rgb(119, 112, 112);
+}
+/* PORTFOLIO */
+.portfolio{
+  background-color: rgb(5, 3, 12);
+}
+
+/* Carousel */
+.carousel-container{
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-slide{
+  display: flex;
+  width: 400px;
+  height: 350px;
+}
+.carousel-slide img{
+  display: flex;
+  width: 100%; 
+  height: 100%;
+  padding: 5px;
+  margin: 0 2px 0 0;
+  border-radius: 20px;
+}
+.fa-arrow-left, .fa-arrow-right{
+  position: absolute;
+  top: 50%;
+  font-size: 2.5rem;
+  z-index: 10;
+  cursor: pointer;
+}
+.fa-arrow-left{
+  left: 2%;
+}
+.fa-arrow-right{
+  right: 2%;
 }
