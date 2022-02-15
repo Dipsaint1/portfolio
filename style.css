@@ -382,7 +382,7 @@
 .off{display: none;}
 
 /* services */
-.services, .portfolio{
+.services, .portfolio, #contact{
   background-color: rgb(14, 6, 44); 
   min-height: 100vh; 
   justify-content: flex-start; 
@@ -393,7 +393,7 @@
   margin-left: 20%;
   color: white;
 }
-.services-container, .portfolio-container{
+.services-container, .portfolio-container, .contact-container{
   width: 100%;
   height: 100%;
   padding: 40px 30px;
@@ -401,14 +401,14 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-.services-header, .portfolio-header{
+.services-header, .portfolio-header, .contact-header{
   font-size: 3rem;
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 30px;
 }
-.services-intro, .portfolio-intro{
+.services-intro, .portfolio-intro, .contact-intro{
   margin-bottom: 30px;
   display: flex;
   justify-content: flex-start;
@@ -417,12 +417,12 @@
   height: 100%;
   line-height: 30px;
 }
-.services-intro p, .portfolio-intro p{
+.services-intro p, .portfolio-intro p, .contact-intro p{
   font-size: 1.2rem;
   color: gray;
   height: 100%;
 }
-.services-information{
+.services-information, .contact-information{
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -528,4 +528,20 @@
 }
 .fa-arrow-right{
   right: 2%;
+}
+/* CONTACT */
+
+.contact-information-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 30%;
+  min-height: 200px;
+  align-items: flex-start;
+  background-color: rgb(34, 29, 72);
+  color: white;
+  margin: 5px;
+  border-radius: 10px;
+  transition: all 0.7s ease;
 }
