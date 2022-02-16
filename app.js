@@ -1,3 +1,7 @@
+const bodywidth = document.querySelector('body').clientWidth;
+// alert(bodywidth);
+
+
 const carouselImages = document.querySelectorAll('.carousel-slide img');
 const carouselSlide = document.querySelector('.carousel-slide');
 
