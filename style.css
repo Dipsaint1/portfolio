@@ -10,20 +10,20 @@
   display: flex; 
   flex-direction: column; 
   align-items: center; 
-  background: black; 
+  background: rgb(26, 23, 23); 
   height: 100%; 
   width: 20%; 
   position: fixed; 
   left: 0;
 }
 .logo{display: flex; flex-basis: 10%; justify-content: flex-start; align-items: center; width: 100%;}
-.logo-design{padding-left: 10px;font-size: 3rem; display: flex; justify-content: flex-start; text-decoration: none; width: 100%; color: white; background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;box-shadow: 1px 1px 3px 3px white;}
+.logo-design{padding-left: 10px;font-size: 3rem; display: flex; justify-content: flex-start; text-decoration: none; width: 100%; color: white; background-image: linear-gradient(to right, #2196F3, rgb(10, 10, 121)); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;box-shadow: 1px 1px 3px 3px white;}
 .navigation{display: flex; flex-basis: 70%; flex-direction: column; width: 100%; align-items: center; justify-content: center;}
 .navigation ul{width: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
 .navigation ul li{justify-content: flex-start; align-items: center; display: flex; width: 100%; margin: 10px 0; padding: 10px 0; cursor: pointer; transition: all 0.8s ease;}
 .navigation ul li > a, .navigation ul li > i{display: flex; margin: 0 10px; font-weight: bold;}
 .navigation ul li > a{text-decoration: none; font-size: 1.3rem; color: white;}
-.current{background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00); box-shadow: 1px 1px 6px 3px white;}
+.current{background-image: linear-gradient(to right, #2196F3, rgb(10, 10, 121)); box-shadow: 1px 1px 6px 3px white;}
 .fas, .far, .fab{color: white; font-size: 2rem;}
 .bottom{border-top: grey 2px solid; display: flex; flex-basis: 20%; align-items: center; justify-content: center; width: 100%;}
 .bottom-img{display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; flex-basis: 40%; margin-left: 5px;}
@@ -67,20 +67,18 @@
   cursor: pointer;
 }
 .name, .wordings, .icons{
-  /* flex-basis: 5%;  */
-  height: 10%; 
   display: flex; 
   width: 50%; 
   justify-content: center; 
   align-items: center; 
   text-align: center; 
-  margin: 5px 0; 
+  margin: 12px 0; 
 }
-.name h2{font-size: 3rem; margin-top: 30px; color: rgb(243, 235, 235);}
+.name h2{font-size: 3rem;  color: rgb(243, 235, 235);}
 .wordings span{font-size: 1.4rem; letter-spacing: 1px; font-weight: bold; color: rgb(211, 197, 197);}
 .icons{display: flex; justify-content: center; width: 20%;}
 .icons a{display: flex; flex-basis: 20%;}
-.download{width: 16%; display: flex; justify-content: center;}
+.download{width: 16%; display: flex; justify-content: center; margin-top: 10px;}
 .download a{width: 100%; text-decoration: none; background: linear-gradient(to right, #2196F3, rgb(10, 10, 121));  color: white; padding: 10px; cursor: pointer; border: none; border-radius: 2px; font-size: 1.5rem; font-weight: bold; transition: all 0.8s ease;}
 .download a:hover{box-shadow: 1px 1px 6px 3px white;}
 
@@ -125,7 +123,7 @@
 .javascript {width: 40%; height: 100%;  background-color: #2196F3;} /* Red */
 .python {width: 60%; height: 100%;  background-color: #2196F3;} /* Dark Grey */
 .more{display: flex; flex-basis: 10%; width: 100%; height: 100%; justify-content: flex-start; align-items: flex-start; margin-top: 20px;}
-.more-btn{font-size: 1.2rem; cursor: pointer; display: flex; align-items: flex-start; color: white; padding: 12px; font-weight: bold; border: none; background: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00);}
+.more-btn{font-size: 1.2rem; cursor: pointer; display: flex; align-items: flex-start; color: white; padding: 12px; font-weight: bold; border: none; background: linear-gradient(to right, #2196F3, rgb(10, 10, 121));}
 .more-btn:hover{box-shadow: 1px 1px 6px 3px white;}
 .show{display: flex;}
 .more-about-me{
@@ -213,7 +211,7 @@
   width: 40%;
   text-decoration: none;
   text-align: center;
-  background: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00);  
+  background: linear-gradient(to right, #2196F3, rgb(10, 10, 121));  
   color: white; 
   padding: 10px; 
   cursor: pointer; 
@@ -237,7 +235,7 @@
   border-radius: 10px;
   border: gray 1px solid;
   display: flex;
-  max-width: 48%;
+  max-width: 46%;
   flex-direction: column;
   flex-wrap: wrap;
   height: 100%;
@@ -253,7 +251,7 @@
   margin-bottom: 10px;
 }
 .achievement-block div{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: center;
   color: rgb(102, 98, 98);
   align-items: center;
@@ -536,7 +534,7 @@
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  max-width: 30%;
+  max-width: 32%;
   min-height: 150px;
   align-items: flex-start;
   background-color: rgb(34, 29, 72);
@@ -582,12 +580,14 @@
 }
 
 .contact-information-container-info h3{
+  width: 100%;
   font-size: 22px;
   margin-bottom: 15px;
 }
 .contact-information-container-info span{
   font-size: 15px;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .form-container{
@@ -663,9 +663,11 @@ form > button:hover{
    .bottom-img img{ width: 65px; height: 65px;}
    .bottom-intro h3{font-size: 1.9rem;}
    .bottom-intro a{font-size: 0.85rem;}
-
    .download a{font-size: 1.3rem;}
-
-
-
  }
+ 
+ @media (max-width: 1200px){
+  body{
+    display: none;
+  }
+}
