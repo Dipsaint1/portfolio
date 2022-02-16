@@ -36,7 +36,7 @@
   height: 100%;
   display: flex; 
   flex-direction: column; 
-  justify-content: flex-start; 
+  justify-content: center; 
   align-items: center; 
   display: flex; 
   position: relative; 
@@ -44,8 +44,21 @@
   width: 80%;
   margin-left: 20%;
 }
+.home-image{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.home-image img{
+  width: 220px;
+  height: 250px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 80%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 80%;
+}
 .icons{
-  background-image: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00); 
+  background-image: linear-gradient(to right, #2196F3, rgb(10, 10, 121)); 
   background-clip: text; 
   -webkit-background-clip: text; 
   -moz-background-clip: text; 
@@ -54,28 +67,21 @@
   cursor: pointer;
 }
 .name, .wordings, .icons{
-  flex-basis: 5%; 
+  /* flex-basis: 5%;  */
   height: 10%; 
   display: flex; 
   width: 50%; 
   justify-content: center; 
   align-items: center; 
   text-align: center; 
-  margin: 8px 0; 
-  color: white;
-  background-image: linear-gradient(to top, #fd1d1d, #fcb045, #ff6a00, black 30%); 
-  background-clip: text; 
-  -webkit-background-clip: text; 
-  -moz-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent; 
+  margin: 5px 0; 
 }
-.name h2{font-size: 3.5rem; color: rgb(0, 0, 0); margin-top: 30px;}
-.wordings span{font-size: 1.5rem; letter-spacing: 1px; font-weight: bold; color: black}
+.name h2{font-size: 3rem; margin-top: 30px; color: rgb(243, 235, 235);}
+.wordings span{font-size: 1.4rem; letter-spacing: 1px; font-weight: bold; color: rgb(211, 197, 197);}
 .icons{display: flex; justify-content: center; width: 20%;}
 .icons a{display: flex; flex-basis: 20%;}
 .download{width: 16%; display: flex; justify-content: center;}
-.download a{width: 100%; text-decoration: none; background: linear-gradient(to right, #fd1d1d, #fcb045, #ff6a00);  color: white; padding: 10px; cursor: pointer; border: none; border-radius: 2px; font-size: 1.5rem; font-weight: bold; transition: all 0.8s ease;}
+.download a{width: 100%; text-decoration: none; background: linear-gradient(to right, #2196F3, rgb(10, 10, 121));  color: white; padding: 10px; cursor: pointer; border: none; border-radius: 2px; font-size: 1.5rem; font-weight: bold; transition: all 0.8s ease;}
 .download a:hover{box-shadow: 1px 1px 6px 3px white;}
 
 /* ABOUT */
