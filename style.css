@@ -1,10 +1,11 @@
 *{padding: 0; margin: 0; scroll-behavior: smooth; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
-.home{
+#home{
   display: flex; 
   width: 100%;
   justify-content: center; 
   align-items: center; 
   height: 100vh;
+  position: relative;
 }
 .left{
   display: flex; 
@@ -17,13 +18,13 @@
   left: 0;
 }
 .logo{display: flex; flex-basis: 10%; justify-content: flex-start; align-items: center; width: 100%;}
-.logo-design{padding-left: 10px;font-size: 3rem; display: flex; justify-content: flex-start; text-decoration: none; width: 100%; color: white; background-image: linear-gradient(to right, #2196F3, rgb(10, 10, 121)); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;box-shadow: 1px 1px 3px 3px white;}
+.logo-design{padding-left: 10px;font-size: 3rem; display: flex; justify-content: flex-start; text-decoration: none; width: 100%; color: white; background-image: linear-gradient(to right, #2196F3, rgb(10, 10, 121)); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;box-shadow: 1px 1px 70px -2px white;}
 .navigation{display: flex; flex-basis: 70%; flex-direction: column; width: 100%; align-items: center; justify-content: center;}
 .navigation ul{width: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
 .navigation ul li{justify-content: flex-start; align-items: center; display: flex; width: 100%; margin: 10px 0; padding: 10px 0; cursor: pointer; transition: all 0.8s ease;}
 .navigation ul li > a, .navigation ul li > i{display: flex; margin: 0 10px; font-weight: bold;}
 .navigation ul li > a{text-decoration: none; font-size: 1.3rem; color: white;}
-.current{background-image: linear-gradient(to right, #2196F3, rgb(10, 10, 121)); box-shadow: 1px 1px 6px 3px white;}
+.current{background-image: linear-gradient(to right, #2196F3, rgb(10, 10, 121));}
 .fas, .far, .fab{color: white; font-size: 2rem;}
 .bottom{border-top: grey 2px solid; display: flex; flex-basis: 20%; align-items: center; justify-content: center; width: 100%;}
 .bottom-img{display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; flex-basis: 40%; margin-left: 5px;}
@@ -38,7 +39,6 @@
   flex-direction: column; 
   justify-content: center; 
   align-items: center; 
-  display: flex; 
   position: relative; 
   right: 0; 
   width: 80%;
@@ -83,7 +83,7 @@
 .download a:hover{box-shadow: 1px 1px 6px 3px white;}
 
 /* ABOUT */
-.about{
+#about{
   background-color: rgb(5, 3, 12); 
   position: relative; 
   width: 80%; 
@@ -382,7 +382,7 @@
 .off{display: none;}
 
 /* services */
-.services, .portfolio, #contact{
+#services, #portfolio, #contact{
   background-color: rgb(14, 6, 44); 
   min-height: 100vh; 
   justify-content: flex-start; 
@@ -490,7 +490,7 @@
   color: rgb(119, 112, 112);
 }
 /* PORTFOLIO */
-.portfolio{
+#portfolio{
   background-color: rgb(5, 3, 12);
 }
 
@@ -515,17 +515,17 @@
   margin: 0 2px 0 0;
   border-radius: 20px;
 }
-.portfolio .fa-arrow-left, .portfolio .fa-arrow-right{
+#portfolio .fa-arrow-left, #portfolio .fa-arrow-right{
   position: absolute;
   top: 50%;
   font-size: 2.5rem;
   z-index: 10;
   cursor: pointer;
 }
-.portfolio .fa-arrow-left{
+#portfolio .fa-arrow-left{
   left: 2%;
 }
-.portfolio .fa-arrow-right{
+#portfolio .fa-arrow-right{
   right: 2%;
 }
 /* CONTACT */
@@ -654,6 +654,30 @@ form > button:hover{
   height: 100%;
 }
 
+/* HAMBURGER */
+.hamburger-container{
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background-color: rgb(82, 6, 223);
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+.bar{
+  position: relative;
+  display: block;
+  width: 25px;
+  background-color: rgb(235, 198, 198);
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.5s ease-in-out;
+}
 
 /* MEDIA QUERIES */
 
@@ -667,7 +691,35 @@ form > button:hover{
  }
  
  @media (max-width: 1200px){
-  body{
+   /*Hamburger Menu*/
+  .hamburger-container{
+     display: flex;
+   }
+  
+  .hamburger-container.active .bar:nth-child(2){   /*Middle bar   */
+    opacity: 0;
+  }
+  .hamburger-container.active .bar:nth-child(1){   /*Upper bar   */
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger-container.active .bar:nth-child(3){   /*Lower bar   */
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .left{
     display: none;
+    width: 23%; 
+    position: fixed; 
+    left: 0;
+    z-index: 2;
+  }
+  .left.active{
+    display: flex;
+    transition: width 5s ease-in-out;
+  }
+  .right, #about, #services, #portfolio, #contact{
+    margin: 0;
+    width: 100%;
   }
 }
+
+/*  */

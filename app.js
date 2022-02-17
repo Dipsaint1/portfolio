@@ -58,17 +58,12 @@ function closeMoreBtn(){
   document.querySelector(".about-container").style.display = "flex";
 }
 
+// HAMBURGER MENU JAVASCRIPT
+const hamburgerMenu = document.querySelector('.hamburger-container');
+const menuLeft= document.querySelector('.left');
 
-
-
-// function previousButton(){
-//   carouselSlide.style.transition = 'transform 0.000000001s ease-in-out';
-//   counter--;
-//   carouselSlide.style.transform = 'translateX(' + (-imageWidth * counter) + 'px)'; // Update the slider
-// }
-
-// function nextButton(){
-//   carouselSlide.style.transition = 'transform 0.000000001s ease-in-out';
-//   counter++;
-//   carouselSlide.style.transform = 'translateX(' + (-imageWidth * counter) + 'px)'; // Upadate the slider
-// }
+hamburgerMenu.addEventListener('click', () => {
+  hamburgerMenu.classList.toggle('active');
+  menuLeft.classList.toggle('active');
+  menuLeft.style.transition = 'all 1s ease-in-out';
+});
