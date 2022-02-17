@@ -76,9 +76,9 @@
 }
 .name h2{font-size: 3rem;  color: rgb(243, 235, 235);}
 .wordings span{font-size: 1.4rem; letter-spacing: 1px; font-weight: bold; color: rgb(211, 197, 197);}
-.icons{display: flex; justify-content: center; width: 20%;}
+.icons{display: flex; justify-content: center; width: 25%; align-items: center}
 .icons a{display: flex; flex-basis: 20%;}
-.download{width: 16%; display: flex; justify-content: center; margin-top: 10px;}
+.download{width: 18%; display: flex; justify-content: center; margin-top: 10px; text-align: center}
 .download a{width: 100%; text-decoration: none; background: linear-gradient(to right, #2196F3, rgb(10, 10, 121));  color: white; padding: 10px; cursor: pointer; border: none; border-radius: 2px; font-size: 1.5rem; font-weight: bold; transition: all 0.8s ease;}
 .download a:hover{box-shadow: 1px 1px 6px 3px white;}
 
@@ -384,7 +384,7 @@
 /* services */
 #services, #portfolio, #contact{
   background-color: rgb(14, 6, 44); 
-  min-height: 100vh; 
+  min-height: 50vh; 
   justify-content: flex-start; 
   align-items: flex-start; 
   display: flex; 
@@ -641,6 +641,7 @@ form > button{
   color: white;
   background-color: rgb(91, 131, 170);
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 form > button:hover{
   background-color: rgb(226, 236, 247);
@@ -685,17 +686,15 @@ form > button:hover{
  @media (max-width: 1350px){
    /* LEFT SIDE OF THE FRONT PAGE */
    .bottom-img img{ width: 65px; height: 65px;}
-   .bottom-intro h3{font-size: 1.9rem;}
-   .bottom-intro a{font-size: 0.85rem;}
-   .download a{font-size: 1.3rem;}
+   .bottom-intro h3{font-size: 1.82rem;}
+   .bottom-intro a{font-size: 0.8rem;}
  }
- 
+
  @media (max-width: 1200px){
    /*Hamburger Menu*/
   .hamburger-container{
      display: flex;
    }
-  
   .hamburger-container.active .bar:nth-child(2){   /*Middle bar   */
     opacity: 0;
   }
@@ -710,11 +709,10 @@ form > button:hover{
     width: 23%; 
     position: fixed; 
     left: 0;
-    z-index: 2;
+    z-index: 20;
   }
   .left.active{
     display: flex;
-    transition: width 5s ease-in-out;
   }
   .right, #about, #services, #portfolio, #contact{
     margin: 0;
@@ -722,4 +720,48 @@ form > button:hover{
   }
 }
 
-/*  */
+@media (max-width: 968px){
+  .left{
+    width: 30%;
+  }
+  .bottom-img img{ width: 65px; height: 65px;}
+  .bottom-intro h3{font-size: 1.7rem;}
+  .bottom-intro a{font-size: 0.8rem;}
+
+  .home-image img{
+    width: 180px;
+    height: 210px;
+  }
+  .name h2{font-size: 2.5rem;}
+  .wordings span{font-size: 1.2rem;}
+  .download a{padding: 8px; font-size: 1.2rem;}
+  
+  /* services */
+  .services-header, .portfolio-header, .contact-header{
+    font-size: 2.5rem;
+  }
+  .services-intro p, .portfolio-intro p, .contact-intro p{
+    font-size: 1rem;
+  }
+  .services-information-container{
+    max-width: 30%;
+  }
+  .services-information-container-icon{
+    font-size: 2.4rem;
+  }
+  .services-information-container-info{
+    font-size: 1.56rem;
+  }
+  .services-information-container-more{
+    font-size: 1.15rem;
+  }
+
+  /* PORTFOLIO */
+  .carousel-slide{
+    width: 320px;
+    height: 280px;
+  }
+  #portfolio .fa-arrow-left, #portfolio .fa-arrow-right{
+    font-size: 2.2rem;
+  }
+}
