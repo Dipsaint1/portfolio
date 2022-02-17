@@ -186,8 +186,8 @@
 }
 .info{
   display: flex;
+  align-items: flex-start;
   flex-basis: 10%;
-  align-items: center;
   min-width: 50%;
   width: 100%;
   font-size: 1.1rem;
@@ -199,6 +199,8 @@
   margin-left: 3px;
   font-weight: bold;
   color: white;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 .more-cv-download{
   display: flex;
@@ -534,7 +536,7 @@
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  max-width: 32%;
+  max-width: 31.5%;
   min-height: 150px;
   align-items: flex-start;
   background-color: rgb(34, 29, 72);
@@ -545,10 +547,6 @@
 }
 .contact-information-container:hover{
   background-color: rgb(102, 97, 143);
-}
-.contact-information-container-icon{
-  display: flex;
-  flex-basis: 20%;
 }
 .contact-information-container-icon{
   display: flex;
@@ -588,6 +586,8 @@
   font-size: 15px;
   margin-bottom: 15px;
   width: 100%;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .form-container{
@@ -605,7 +605,7 @@ form{
 form div{
   margin: 15px 0;
   min-height: 60px;
-  width: 700px;
+  width: 500px;
   padding: 0 20px;
 }
 .form-header{
@@ -763,5 +763,74 @@ form > button:hover{
   }
   #portfolio .fa-arrow-left, #portfolio .fa-arrow-right{
     font-size: 2.2rem;
+  }
+
+  /* CONTACT */
+  .contact-information{
+    justify-content: space-between;
+  }
+  .contact-information-container-icon i{
+    width: 40px;
+    height: 40px;
+    font-size: 1.7rem;
+  } 
+  .contact-information-container-info h3{
+    font-size: 20px;
+  }
+  .contact-information-container-info span{
+    font-size: 13px;
+  }
+
+  .form-header{
+    font-size: 1.5rem;
+  }
+  form div input, form div textarea{
+    font-size: 1.05rem;
+  }
+  form > button{
+    font-size: 1.05rem;
+    padding: 8px 0;
+  }
+  
+  ::placeholder{
+    font-size: 1.05rem;
+  }
+  /* More about me */
+  .personal-info h2, .achievements h2, .experience h2, .education h2{
+    font-size: 1.75rem;
+  }
+  .info{
+    font-size: 1rem;
+  }
+  .more-cv{
+    font-size: 1.15rem; 
+  }
+  .achievement-block h3{
+    font-size: 2.7rem;
+  }
+  .achievement-block div{
+    font-size: 1.15rem;
+  }
+  .achievement-block div>span{
+    font-size: 3rem;
+  }
+  .experience-icon .fa, .education-icon .fa{
+    font-size: 1.3rem;
+    width: 40px;
+    height: 40px;
+  }
+  .experience-line, .education-line{
+    min-height: 113px;
+  }
+  .date{
+    width: 37%;
+  }
+  .role-description{
+    font-size: 0.9rem;
+  }
+  .close-container .close{
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
   }
 }
