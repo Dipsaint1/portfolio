@@ -17,8 +17,8 @@
   position: fixed; 
   left: 0;
 }
-.logo{display: flex; flex-basis: 10%; justify-content: flex-start; align-items: center; width: 100%;}
-.logo-design{padding-left: 10px;font-size: 3rem; display: flex; justify-content: flex-start; text-decoration: none; width: 100%; color: white; background-image: linear-gradient(to right, #2196F3, rgb(10, 10, 121)); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;box-shadow: 1px 1px 70px -2px white;}
+.logo{display: flex; flex-basis: 10%; justify-content: center; align-items: center; width: 100%;}
+.logo-design{padding-left: 10px;font-size: 3rem; display: flex; justify-content: flex-start; text-decoration: none; width: 100%; color: white; background-image: linear-gradient(to right, #2196F3, rgb(10, 10, 121)); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;box-shadow: 1px 1px 0px 0px white;}
 .navigation{display: flex; flex-basis: 70%; flex-direction: column; width: 100%; align-items: center; justify-content: center;}
 .navigation ul{width: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
 .navigation ul li{justify-content: flex-start; align-items: center; display: flex; width: 100%; margin: 10px 0; padding: 10px 0; cursor: pointer; transition: all 0.8s ease;}
@@ -48,6 +48,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 18px;
 }
 .home-image img{
   width: 220px;
@@ -72,15 +73,15 @@
   justify-content: center; 
   align-items: center; 
   text-align: center; 
-  margin: 12px 0; 
+  margin: 22px 0; 
 }
 .name h2{font-size: 3rem;  color: rgb(243, 235, 235);}
 .wordings span{font-size: 1.4rem; letter-spacing: 1px; font-weight: bold; color: rgb(211, 197, 197);}
-.icons{display: flex; justify-content: center; width: 25%; align-items: center}
-.icons a{display: flex; flex-basis: 20%;}
-.download{width: 18%; display: flex; justify-content: center; margin-top: 10px; text-align: center}
-.download a{width: 100%; text-decoration: none; background: linear-gradient(to right, #2196F3, rgb(10, 10, 121));  color: white; padding: 10px; cursor: pointer; border: none; border-radius: 2px; font-size: 1.5rem; font-weight: bold; transition: all 0.8s ease;}
-.download a:hover{box-shadow: 1px 1px 6px 3px white;}
+.icons{display: flex; justify-content: center; width: 40%; align-items: center}
+.icons a{display: flex; flex-basis: 20%; margin: 0 10px}
+.download{width: 22%; display: flex; justify-content: center; margin-top: 8px; text-align: center}
+.download a{width: 100%; text-decoration: none; background: linear-gradient(to right, #2196F3, rgb(10, 10, 121));  color: white; padding: 15px; cursor: pointer; border: none; border-radius: 2px; font-size: 1.5rem; font-weight: bold; transition: all 0.8s ease;}
+.download a:hover{box-shadow: 1px 1px 6px 3px white; border-radius: 5px}
 
 /* ABOUT */
 #about{
@@ -91,7 +92,7 @@
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
-  min-height: 100vh; 
+  min-height: 50vh; 
   padding: 30px 10px;
 }
 .about-container{
@@ -732,9 +733,14 @@ form > button:hover{
     width: 180px;
     height: 210px;
   }
-  .name h2{font-size: 2.5rem;}
-  .wordings span{font-size: 1.2rem;}
-  .download a{padding: 8px; font-size: 1.2rem;}
+
+  .name, .wordings, .icons{
+    margin: 35px 0; 
+  }
+
+  .name h2{font-size: 2.9rem;}
+  .wordings span{font-size: 1.55rem;}
+  .download a{padding: 8px; font-size: 1.3rem;}
   
   /* services */
   .services-header, .portfolio-header, .contact-header{
@@ -823,7 +829,7 @@ form > button:hover{
     min-height: 113px;
   }
   .date{
-    width: 37%;
+    width: 47%;
   }
   .role-description{
     font-size: 0.9rem;
@@ -833,4 +839,48 @@ form > button:hover{
     height: 40px;
     font-size: 1.6rem;
   }
+}
+
+@media(max-width: 805px){   
+  /* 720px to 805px */
+     /* LEFT SIDE OF THE FRONT PAGE */
+     .bottom-img img{ width: 60px; height: 60px;}
+     .bottom-intro h3{font-size: 1.63rem;}
+     .bottom-intro a{font-size: 0.77rem;}
+
+     .name, .wordings{
+      margin: 27px 0; 
+      width: 57%;
+    }
+    .download{width: 21%;}
+    .download a{width: 100%; padding: 13px;}
+
+     .experience-line, .education-line{
+      min-height: 130px;
+    }
+}
+@media(max-width: 720px){
+  /* 568px to 720px */
+  .logo-design{font-size: 2.7rem;}
+
+
+
+
+
+  .home-image{
+    margin-bottom: 15px;
+  }
+  .home-image img{
+    width: 240px;
+    height: 270px;
+  }
+  .name, .wordings{
+    width: 85%; 
+    margin: 22px 0; 
+  }
+  .name h2{font-size: 2.75rem;}
+  .wordings span{font-size: 1.59rem;}
+
+  .download{width: 29%; margin-top: 18px}
+  .download a{width: 100%; padding: 13px 12px; font-size: 1.45rem;}
 }
