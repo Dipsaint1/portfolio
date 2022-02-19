@@ -18,7 +18,7 @@
   left: 0;
 }
 .logo{display: flex; flex-basis: 10%; justify-content: center; align-items: center; width: 100%;}
-.logo-design{padding-left: 10px;font-size: 3rem; display: flex; justify-content: flex-start; text-decoration: none; width: 100%; color: white; background-image: linear-gradient(to right, #2196F3, rgb(10, 10, 121)); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;box-shadow: 1px 1px 0px 0px white;}
+.logo-design{padding-left: 10px;font-size: 3rem; display: flex; justify-content: flex-start; text-decoration: none; width: 100%; color: white; background-image: linear-gradient(to right, #2196F3, rgb(10, 10, 121)); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; cursor: pointer;box-shadow: 1px 0px 0px 0px white;}
 .navigation{display: flex; flex-basis: 70%; flex-direction: column; width: 100%; align-items: center; justify-content: center;}
 .navigation ul{width: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
 .navigation ul li{justify-content: flex-start; align-items: center; display: flex; width: 100%; margin: 10px 0; padding: 10px 0; cursor: pointer; transition: all 0.8s ease;}
@@ -48,7 +48,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
 }
 .home-image img{
   width: 220px;
@@ -855,32 +855,110 @@ form > button:hover{
     .download{width: 21%;}
     .download a{width: 100%; padding: 13px;}
 
-     .experience-line, .education-line{
+    .experience-line, .education-line{
       min-height: 130px;
     }
 }
 @media(max-width: 720px){
   /* 568px to 720px */
+  .logo, .bottom{padding: 0; margin: 0; background-color: rgb(201, 205, 209);}
   .logo-design{font-size: 2.7rem;}
 
-
-
-
-
-  .home-image{
-    margin-bottom: 15px;
-  }
-  .home-image img{
-    width: 240px;
-    height: 270px;
-  }
-  .name, .wordings{
-    width: 85%; 
-    margin: 22px 0; 
-  }
+  /* Navigation */
+  .navigation{flex-basis: 78%;}
+  .bottom-img{display: none;}
+  .bottom{width: 100%; flex-basis: 12%;}
+  .bottom-intro{width: 100%; flex-basis: 100%; padding: 0;}
+  .bottom-intro h3{font-size: 2.3rem; margin: 5px 0; color: rgb(11, 27, 33)} 
+  .bottom-intro a{font-size: 12px; width: 100%; margin: 5px 0; text-align: center; color: rgb(11, 27, 33)}
+  .home-image{margin-bottom: 20px;}
+  .home-image img{width: 240px; height: 270px;}
+  .name, .wordings{width: 85%; margin: 22px 0;}
   .name h2{font-size: 2.75rem;}
   .wordings span{font-size: 1.59rem;}
-
   .download{width: 29%; margin-top: 18px}
-  .download a{width: 100%; padding: 13px 12px; font-size: 1.45rem;}
+  .download a{width: 100%; padding: 13px 12px; font-size: 1.45rem; display: flex; text-align: center}
+
+  /* ABOUT SECTION */
+  .about-container{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .about-image{width: 100%; margin-bottom: 20px;}
+  .about-image img{width: fit-content; height: 450px;}
+  .about-skill{justify-content: flex-start; margin-top: 10px;}
+  .about-header{font-size: 1.45rem;}
+  .about-intro p, .skill-level p{font-size: 1.15rem;}
+
+  .more-container{
+    width: 100%;
+    flex-direction: column;
+    border-radius: 10px;
+    max-height: 50vh;
+    flex-wrap: nowrap;
+  }
+  .more-about-me-container{
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0px 0px 20px 0;
+    border-bottom: gray 3px solid;
+  }
+  .personal-info, .achievements, .experience, .education{
+    margin-bottom: 0;
+  }
+
+  .personal-info h2, .achievements h2, .experience h2, .education h2{
+    font-size: 1.75rem;
+  }
+  .profile-details{
+    flex-wrap: wrap;
+  }
+  .info{
+    font-size: 1.07rem;
+    margin: 15px 0;
+  }
+  .info>span{
+    margin-left: 3px;
+  }
+  .more-cv{
+    width: 30%;
+  }
+  .achievement-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .achievement-block{
+    border-radius: 5px;
+    max-width: 43%;
+    margin: 10px 10px 20px 3px;
+    padding: 10px 0;
+  }
+  .achievement-block div{
+    font-size: 1.5rem;
+  }
+  .experience-line, .education-line{
+    min-height: 103px;
+  }
+  .date{
+    width: 37%;
+    font-size: 1.4rem;
+    border-radius: 10px;
+  }
+  .role{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 13px 0;
+  }
+  .role > span{
+    font-size: 1.1rem;
+  }
+  .role-description{
+    font-size: 1.05em;
+    padding-right: 10px;
+  }
+
+  /* SERVICES */
 }
+
