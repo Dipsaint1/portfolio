@@ -1047,18 +1047,14 @@ form > button:hover{
   .left{
     width: 35%;
   }
-  .right{
-    position: absolute; top: 0; justify-content: center; margin: 0;
-    /* max-height: 80%; */
-  }
   .logo{
-    flex-basis: 10%; justify-content: center; 
+    flex-basis: 7%; justify-content: center; 
   }
   .logo-design{font-size: 2.25rem; box-shadow: none;}
 
 
   /* Navigation */
-  .navigation{flex-basis: 90%; justify-content: flex-start; padding-top: 30px}
+  .navigation{flex-basis: 93%; justify-content: flex-start; padding-top: 30px}
   .bottom{display: none}
   .home-image{margin-bottom: 30px; width: 100%; }
   .name, .wordings{width: 85%; margin: 20px 0;}
