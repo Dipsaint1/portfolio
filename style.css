@@ -1045,31 +1045,27 @@ form > button:hover{
 }
 @media(max-width: 568px){
   .left{
-    height: 100%;
+    width: 35%;
+  }
+  .right{
+    position: absolute; top: 0; justify-content: flex-start; align-items: right; margin: 0;
+    /* max-height: 80%; */
   }
   .logo{
-    flex-basis: 10%; justify-content: center;
+    flex-basis: 10%; justify-content: center; 
   }
-  .logo-design{font-size: 1.8rem;}
+  .logo-design{font-size: 2.5rem; box-shadow: none;}
 
 
   /* Navigation */
   .navigation{flex-basis: 90%; justify-content: flex-start; padding-top: 20px}
   .bottom{display: none}
-  .bottom-intro{width: 100%; flex-basis: 100%; padding: 0;}
-  .bottom-intro h3{font-size: 2.3rem; margin: 5px 0; color: rgb(11, 27, 33)} 
-  .bottom-intro a{font-size: 12px; width: 100%; margin: 5px 0; text-align: center; color: rgb(11, 27, 33)}
-  .home-image{margin-bottom: 20px;}
-  .home-image img{width: 240px; height: 270px;}
-  .name, .wordings{width: 85%; margin: 22px 0;}
-  .name h2{font-size: 2.75rem;}
-  .wordings span{font-size: 1.59rem;}
-  .download{width: 29%; margin-top: 18px}
-  .download a{width: 100%; padding: 13px 12px; font-size: 1.45rem; display: flex; text-align: center}
+  .home-image{margin-bottom: 30px;}
+  .name, .wordings{width: 85%; margin: 32px 0;}
 
   .home-image img{
-    width: 170px;
-    height: 200px;
+    width: 200px;
+    height: 230px;
     border-radius: 5px;
   }
   .name h2{font-size: 2.3rem;}
@@ -1078,9 +1074,6 @@ form > button:hover{
   .icons a{margin: 0}
   .download{width: 35%}
   .download a{text-align: center; font-size: 1.35rem; justify-content: center;}
-
-
-
 
   /* form */
   .form-container{
