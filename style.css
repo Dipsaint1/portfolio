@@ -1054,19 +1054,19 @@ form > button:hover{
   .logo{
     flex-basis: 10%; justify-content: center; 
   }
-  .logo-design{font-size: 2.5rem; box-shadow: none;}
+  .logo-design{font-size: 2.25rem; box-shadow: none;}
 
 
   /* Navigation */
-  .navigation{flex-basis: 90%; justify-content: flex-start; padding-top: 20px}
+  .navigation{flex-basis: 90%; justify-content: flex-start; padding-top: 30px}
   .bottom{display: none}
-  .home-image{margin-bottom: 20px; width: 100%; }
-  .name, .wordings{width: 85%; margin: 25px 0;}
+  .home-image{margin-bottom: 30px; width: 100%; }
+  .name, .wordings{width: 85%; margin: 20px 0;}
 
   .home-image img{
-    width: 300px;
+    width: 290px;
     height: 330px;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   .name h2{font-size: 2.3rem;}
   .wordings span{font-size: 1.3rem; width: 100%}
