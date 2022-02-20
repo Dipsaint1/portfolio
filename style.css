@@ -1071,6 +1071,11 @@ form > button:hover{
   .download{width: 35%}
   .download a{text-align: center; font-size: 1.35rem; justify-content: center;}
 
+  /* ABOUT */
+  .about-image{
+    display: none;
+  }
+
   /* form */
   .form-container{
     width: 100%;
