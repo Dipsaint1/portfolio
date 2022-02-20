@@ -438,7 +438,7 @@
   justify-content: center;
   width: 100%;
   max-width: 23%;
-  min-height: 250px;
+  height: 250px;
   align-items: center;
   background-color: rgb(34, 29, 72);
   color: white;
@@ -960,5 +960,88 @@ form > button:hover{
   }
 
   /* SERVICES */
+  .services-header, .portfolio-header, .contact-header{
+    font-size: 2.3rem;
+  }
+  .services-intro, .portfolio-intro, .contact-intro{
+    width: 100%;
+  }
+  .services-intro p, .portfolio-intro p, .contact-intro p{
+    font-size: 1.15rem;
+  }
+  .services-information-container{
+    max-width: 42%;
+    margin: 15px 5px;
+    border-radius: 5px;
+    height: 195px;
+  }
+  /* .services-information-container-icon, .services-information-container-more, .services-information-container-info{
+    margin: 0;
+  } */
+  .services-information-container-icon{
+    font-size: 2.2rem;
+  }
+  .services-information-container-info{
+    width: 70%;
+    font-size: 1.4rem;
+  }
+  .services-information-container-more{
+    font-size: 1.15rem;
+  }
+  .services-information-container-more-icon{
+    font-size: 17px;
+  }
+  .services-information-container:hover{
+    box-shadow: 0px 1px 0px 0px white;
+  }
+
+  /* PORTFOLIO */
+  .carousel-slide{
+    width: 300px;
+    height: 250px;
+  }
+  .carousel-slide img{
+    border-radius: 10px;
+  }
+  #portfolio .fa-arrow-left, #portfolio .fa-arrow-right{
+    font-size: 2.2rem;
+  }
+
+  /* CONTACT */
+  .contact-information-container{
+    max-width: 47%;
+    margin: 15px 5px;
+    border-radius: 5px;
+  }
+  .contact-information-container-icon i{
+    width: 40px;
+    height: 40px;
+    font-size: 1.7rem;
+  } 
+  .contact-information-container-info h3{
+    font-size: 18px;
+  }
+  .contact-information-container-info span{
+    font-size: 15px;
+  }
+  form{
+    border-radius: 5px;
+  }
+  .form-header{
+    font-size: 1.6rem;
+    text-align: justify;
+    width: 100%;
+  }
+  form div input, form div textarea{
+    font-size: 1.1rem;
+  }
+  form > button{
+    font-size: 1.1rem;
+    border-radius: 4px;
+  }
+  ::placeholder{
+    font-size: 1.1rem;
+  }
+
 }
 
