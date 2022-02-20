@@ -1060,12 +1060,12 @@ form > button:hover{
   /* Navigation */
   .navigation{flex-basis: 90%; justify-content: flex-start; padding-top: 20px}
   .bottom{display: none}
-  .home-image{margin-bottom: 20px; width: 100%; height: 100%; justify-content: center; align-items: center;}
+  .home-image{margin-bottom: 20px; width: 100%; }
   .name, .wordings{width: 85%; margin: 25px 0;}
 
   .home-image img{
-    width: 240px;
-    height: 270px;
+    width: 300px;
+    height: 330px;
     border-radius: 5px;
   }
   .name h2{font-size: 2.3rem;}
