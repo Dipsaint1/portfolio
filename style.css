@@ -1048,7 +1048,7 @@ form > button:hover{
     width: 35%;
   }
   .right{
-    position: absolute; top: 0; justify-content: flex-start; align-items: right; margin: 0;
+    position: absolute; top: 0; justify-content: center; margin: 0;
     /* max-height: 80%; */
   }
   .logo{
@@ -1064,8 +1064,8 @@ form > button:hover{
   .name, .wordings{width: 85%; margin: 32px 0;}
 
   .home-image img{
-    width: 200px;
-    height: 230px;
+    width: 210px;
+    height: 240px;
     border-radius: 5px;
   }
   .name h2{font-size: 2.3rem;}
