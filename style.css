@@ -1054,8 +1054,8 @@ form > button:hover{
   .name, .wordings{width: 85%; margin: 20px 0;}
 
   .home-image img{
-    width: 290px;
-    height: 330px;
+    width: 280px;
+    height: 320px;
     border-radius: 10px;
   }
   .name h2{font-size: 2.3rem;}
@@ -1108,5 +1108,14 @@ form > button:hover{
   .wordings span{font-size: 1.15rem;}
   .download{width: 40%}
   .download a{font-size: 1.15rem;}
+
+  .profile-details{flex-direction: column;}
+  .info{font-size: 1.2rem;}
+
+  .more-cv{width: 53%; font-size: 1.2rem;}
+  .info>span{
+    margin-left: 10px;
+  }
+  
 }
 
