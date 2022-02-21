@@ -1081,10 +1081,7 @@ form > button:hover{
   .date{
     width: 39%;
     font-size: 1.15rem;
-    border-radius: 10px;
   }
-
-
   /* form */
   .form-container{
     width: 100%;
@@ -1096,7 +1093,20 @@ form > button:hover{
     width: 100%;
   }
 }
+
 @media(max-width: 480px){
-  
+  /* Logo */
+  .left{width: 40%;} .logo-design{font-size: 1.85rem;}
+  .navigation ul li > a{font-size: 1.2rem;}
+  .fas, .far, .fab{font-size: 1.7rem;}
+
+  .home-image{margin-bottom: 10px;}
+  .home-image img{width: 240px; height: 280px;}
+
+  .name, .wordings{width: 85%; margin: 15px 0;}
+  .name h2{font-size: 2rem;}
+  .wordings span{font-size: 1.15rem;}
+  .download{width: 40%}
+  .download a{font-size: 1.15rem;}
 }
 
