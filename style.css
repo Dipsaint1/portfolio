@@ -1026,7 +1026,7 @@ form > button:hover{
     border-radius: 5px;
   }
   .form-header{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: justify;
     width: 100%;
   }
@@ -1110,18 +1110,91 @@ form > button:hover{
   .download{width: 40%}
   .download a{font-size: 1.15rem;}
 
+  .achievement-container{width: 100%; flex-direction: column; align-items: center;}
+  .achievement-block{
+    border-width: 3px;
+    max-width: 250px;
+    margin: 10px 10px 20px 3px;
+    padding: 10px 0;
+  }
+
+  .more-about-me-container{
+    margin: 5px 0;
+  }
+  .achievement-block h3{font-size: 2.3rem;}
+  .achievement-block div{font-size: 1.4rem;}
   .profile-details{flex-direction: column;}
   .info{font-size: 1.2rem;}
+  .date{width: fit-content; padding: 10px}
+  .experience-line, .education-line{display: none}
 
-  .more-cv{width: 53%; font-size: 1.2rem;}
+  .more-cv{width: fit-content; font-size: 1.2rem;}
   .info>span{margin-left: 10px;}
   
-  .services-information{width: 100%;flex-direction: column;}
-  .services-information-container{max-width: 300px; margin: 15px 0; min-height: 195px; transform: none;}
+  .services-information, .contact-information{width: 100%;flex-direction: column; align-items: center;}
+  .services-information-container, .contact-information-container{max-width: 330px; margin: 15px 0; min-height: 195px; transform: none;}
   .services-information-container-icon{font-size: 2.4rem;}
-  .services-information-container-info{width: 70%; font-size: 1.6rem;
-  }
+  .services-information-container-info{width: 70%; font-size: 1.6rem;}
   .services-information-container-more{font-size: 1.35rem;}
-  .services-information-container-more-icon{font-size: 19px;}
+  .services-information-container-more-icon{font-size: 17px;}
+
+  /* CONTACT */
+  .contact-information-container-icon{flex-basis: 10%;}
+  .contact-information-container-info{flex-basis: 90%; padding-right: 2px;}
+  .contact-information-container-icon i{width: 50px; height: 50px; font-size: 2.4rem;} 
+  .contact-information-container-info h3{font-size: 22px;}
+  .contact-information-container-info span{font-size: 16px;}
+
+  .form-header{font-size: 18px;}
 }
 
+@media(max-width: 360px){
+  .left{width: 42%}
+  .logo-design{font-size: 1.5rem;}
+  .navigation ul li > a{font-size: 1rem;}
+  .fas, .far, .fab{font-size: 1.15rem;}
+
+  .home-image img{width: 200px; height: 240px;}
+
+  .name, .wordings{width: 97%; margin: 15px 0;}
+  .name h2{font-size: 1.7rem;}
+  .wordings span{font-size: 1.15rem;}
+  .download{width: fit-content}
+  .download a{font-size: 1.05rem;}
+
+  .about-header, .services-header, .portfolio-header, .contact-header{font-size: 1.25rem;}
+  .about-intro h3, .skill-level h1{font-size: 1.16rem; width: 100%}
+  .about-intro p, .skill-level p{font-size: 1rem;}
+  .skill-bar{width: 100%; flex-direction: column; align-items: flex-start;}
+  .language-icons p{font-size: 1.1rem}
+  .container{width: 200px; height: 20px;}
+
+  .achievement-block{max-width: 180px;}
+  .personal-info h2, .achievements h2, .experience h2, .education h2{font-size: 1.4rem; width: fit-content;}
+  .achievement-block h3{font-size: 1.8rem;}
+  .achievement-block div{font-size: 1.2rem;}
+
+
+  .more-about-me-container{padding: 10px}
+  .experience-block, .education-block{width: 100%;}
+  .experience-container-left, .education-container-left{display: none;}
+  .info{font-size: 1.2rem;}
+  .date{width: fit-content; padding: 10px; margin: 0}
+  .experience-line, .education-line{display: none}
+
+
+  /* SERVICES */
+  .services-information-container, .contact-information-container{max-width: 320px;}
+  .services-information-container-icon{font-size: 2rem;}
+  .services-information-container-info{font-size: 1.4rem;}
+  .services-information-container-more{font-size: 1.23rem;}
+  .services-information-container-more-icon{font-size: 15px;}
+
+  /* CONTACT */
+  .contact-information-container-icon i{width: 40px; height: 40px; font-size: 1.8rem;} 
+  .contact-information-container-info h3{font-size: 19px;}
+  .contact-information-container-info span{font-size: 15px;}
+
+  .form-header{font-size: 17px;}
+  form > button{font-size: 1rem; width: fit-content; padding: 10px}
+}
