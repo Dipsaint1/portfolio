@@ -922,7 +922,8 @@ form > button:hover{
     margin-left: 3px;
   }
   .more-cv{
-    width: 30%;
+    width: 33%;
+    border-radius: 5px;
   }
   .achievement-container{
     justify-content: space-between;
@@ -1044,15 +1045,8 @@ form > button:hover{
   }
 }
 @media(max-width: 568px){
-  .left{
-    width: 35%;
-  }
-  .logo{
-    flex-basis: 7%; justify-content: center; 
-  }
-  .logo-design{font-size: 2.25rem; box-shadow: none;}
-
-
+  .left{width: 35%;}
+  .logo{flex-basis: 7%; justify-content: center;} .logo-design{font-size: 2.25rem; box-shadow: none;}
   /* Navigation */
   .navigation{flex-basis: 93%; justify-content: flex-start; padding-top: 30px}
   .bottom{display: none}
@@ -1075,6 +1069,21 @@ form > button:hover{
   .about-image{
     display: none;
   }
+  .info{
+    padding-right: 10px;
+  }
+  .achievement-block h3{
+    font-size: 2rem;
+  }
+  .achievement-block div{
+    font-size: 1.2rem;
+  }
+  .date{
+    width: 39%;
+    font-size: 1.15rem;
+    border-radius: 10px;
+  }
+
 
   /* form */
   .form-container{
@@ -1086,5 +1095,8 @@ form > button:hover{
   form div{
     width: 100%;
   }
+}
+@media(max-width: 480px){
+  
 }
 
